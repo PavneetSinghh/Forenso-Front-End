@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Forenso</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:900&display=swap" rel="stylesheet" />
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Font Awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="checkPasswordStrength.js"></script>
+  <script src="Javascriptfunction.js"></script>
+</head>
+
+<body>
+
+  <section id="title">
+    <div class="container-fluid">
+      <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="">Forenso</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing">About us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Title -->
+      <div class="row">
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <h1>Exploring the depths of digital footprints.</h1>
+          <button type="button" class="btn btn-dark btn-lg download-button">
+            <i class="fa-solid fa-key"></i> Secured Text
+          </button>
+          <button type="button" class="btn btn-lg btn-outline-light download-button">
+            <i class="fa-solid fa-shield-halved"></i> Secured Images
+          </button>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <img class='img-eye' src="cyber.webp" alt="avatar"  />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+
+  <section id="features">
+    <div class="row">
+      <div class="feature-box col-lg-4 col-md-12 col-sm-12">
+        <i class="fas fa-check-circle icon fa-5x"></i>
+        <h3>Easy to use.</h3>
+        <p>Security made easy for you.</p>
+      </div>
+      <div class="feature-box col-lg-4 col-md-12 col-sm-12">
+        <i class="fas fa-bullseye icon fa-5x"></i>
+        <h3>Secure</h3>
+        <p>Protect yourself from cruel world.</p>
+      </div>
+      <div class="feature-box col-lg-4 col-md-12 col-sm-12">
+        <i class="fas fa-heart icon fa-5x"></i>
+        <h3>Availability.</h3>
+        <p>Available whenever you want.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing">
+    <h2>Here are few services that we provide</h2>
+    <p>Simple and easy to use.</p>
+
+    <div class="row">
+      <div class="col-lg-4 col-md-6 pricing-column">
+        <div class="card">
+          <div class="card-header">
+            <h3>Password Strength Checker</h3>
+          </div>
+          <div class="card-body">
+            
+            <p>Our Password Strength Checker is your ally in fortifying your digital defenses, ensuring that your accounts remain impenetrable against unauthorized access.</p>
+            <button type="button" class="btn btn-dark btn-lg download-button" onclick="checkPasswordStrength()">Use now</button>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 pricing-column">
+        <div class="card">
+          <div class="card-header">
+            <h3>Captcha Generator</h3>
+          </div>
+          <div class="card-body">
+            
+            <p>Our captcha generator tool stands as a safeguard, ensuring secure access to your online platforms. By generating unique challenges, it thwarts automated bots, preserving the integrity of your website or application. Our system crafts captchas that are both user-friendly and effective, striking a delicate balance between security and user experience.</p>
+            <button type="button" class="btn btn-dark btn-lg download-button" onclick="generateCaptcha()">Use now</button>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 pricing-column">
+        <div class="card">
+          <div class="card-header">
+            <h3>Encryption</h3>
+          </div>
+          <div class="card-body">
+            
+            <p>Our Encryption Tool harnesses the power of AES, DES, and RSA algorithms to safeguard your sensitive data with the highest level of security.</p>
+            
+            <button type="button" class="btn btn-dark btn-lg download-button">Use now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 pricing-column">
+        <div class="card">
+          <div class="card-header">
+            <h3>Fake News Detection</h3>
+          </div>
+          <div class="card-body">
+            <p>Our Fake News Detection tool is a beacon of truth in the digital age, empowering users to discern fact from fiction with confidence.With our tool at your disposal, you can navigate the information landscape with clarity and certainty, safeguarding yourself and others against the harmful effects of fake news. </p>
+            
+            <button type="button" class="btn btn-dark btn-lg download-button">Use now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 pricing-column">
+        <div class="card">
+          <div class="card-header">
+            <h3>Bot Detection</h3>
+          </div>
+          <div class="card-body">
+            
+            <p>Our Bot Detection feature is a vital shield against automated threats, safeguarding your online platforms from malicious bots and ensuring genuine user engagement.</p>
+            
+            <button type="button" class="btn btn-dark btn-lg download-button">Use now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+
+  <section id="cta">
+    <h1>Many more tools to come, Sign up now!</h1>
+    </div>
+  </section>
+
+  <!-- Footer -->
+
+  <footer id="footer">
+    <div class="social">
+      <span class="spanSpace">
+        <a href="www.twitter.com"><i class="fab btn-outline-dark fa-twitter fa-2x"></i></a>
+      </span>
+      <span class="spanSpace">
+        <a href="www.facebook.com"><i class="fab btn-outline-dark fa-facebook-f fa-2x"></i></a>
+      </span>
+      <span class="spanSpace">
+        <a href="www.instagram.com"><i class="fab btn-outline-dark fa-instagram fa-2x"></i></a>
+      </span>
+      <span class="spanSpace">
+        <a href="nandkishorsinghrajawat27@gmail.com"><i class="fas btn-outline-dark fa-envelope fa-2x"></i></a>
+      </span>
+    </div>
+    </footer>
+    
+</body>
+
+</html>
